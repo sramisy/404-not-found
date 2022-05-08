@@ -12,6 +12,7 @@
     text-transform: uppercase;
     letter-spacing: -0.01rem;
     border: 1px solid var(--clr-gray-1);
+    cursor: pointer;
 }
 
 .btn--gray {

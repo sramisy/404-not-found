@@ -1,0 +1,20 @@
+.btn {
+    --color: var(--clr-gray-1);
+    --bgColor: var(--clr-white);
+
+    display: inline-block;
+    padding-inline: 2.75rem;
+    padding-block: 1.375rem;
+    color: var(--color);
+    background-color: var(--bgColor);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.01rem;
+    border: 1px solid var(--clr-gray-1);
+}
+
+.btn--gray {
+    --color: var(--clr-white);
+    --bgColor: var(--clr-gray-1);
+}

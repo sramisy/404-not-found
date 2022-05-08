@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+
+@import "button.css";
+
+:root {
+  /* Colors */
+  --clr-gray-1: #333333;
+  --clr-gray-2: #4f4f4f;
+  --clr-gray-3: #bdbdbd;
+  --clr-white: #ffffff;
+
+  /* Fonts */
+  --ff-primary: 'Space Mono', monospace;
+  --ff-secondary: 'Montserrat', sans-serif;
+  --ff-tertiary: 'Inconsolata', monospace;
+
+  /* Font Sizes */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 3rem;
+  --fs-3xl: 4rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  font-size: 16px;
+  color: var(--clr-gray-1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.container {
+  max-width: 1240px;
+  margin-inline: auto;
+}
+
+.main-content {
+  padding-inline: 1.5rem;
+  padding-block-start: clamp(1.5rem, 0.75rem + 2.5vw, 2.5rem);
+  padding-block-end: 1.5rem;
+}
+
+.title-1 {
+
+}
+
+.title-2 {
+  font-family: var(--ff-tertiary);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.125rem;
+}
+
+.not-found {
+  display: -ms-grid;
+  display: grid;
+  gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  padding-block: clamp(4rem, 2rem + 8vw, 6rem);
+}
+
+.not-found__content > * + * {
+  margin-block-start: 4rem;
+}
+
+.not-found__text > * + * {
+  margin-block-start: 2rem;
+}
+
+.not-found__title {
+  font-size: clamp(var(--fs-2xl), 1.5rem + 3vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.15rem;
+  max-inline-size: 16ch;
+}
+
+.not-found__desc {
+  color: var(--clr-gray-2);
+  font-size: clamp(var(--fs-lg), 0.75rem + 1.5vw, var(--fs-xl));
+  letter-spacing: -0.05rem;
+  max-inline-size: 376px;
+}
+
+.author {
+  font-size: var(--fs-sm);
+  font-family: var(--ff-secondary);
+  font-weight: 500;
+  text-align: center;
+  color: var(--clr-gray-3);
+}
+
+.author__repo {
+  font-size: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .not-found {
+    gap: clamp(4rem, 2rem + 5.5vw, 7.5rem);
+  }
+}

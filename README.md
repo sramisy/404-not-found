@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://404-not-found-drab.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -35,13 +35,6 @@
 ## Overview
 
 ![screenshot](https://raw.githubusercontent.com/sramisy/404-not-found/main/.github/images/not-found-screenshot.png)
-
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
 
 ### Built With
 
